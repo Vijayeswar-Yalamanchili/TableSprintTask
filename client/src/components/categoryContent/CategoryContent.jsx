@@ -15,7 +15,7 @@ function CategoryContent() {
           </div>
           <div className="searchBar d-flex ms-5">
             <div className='searchIcon ms-2'><FontAwesomeIcon icon={faMagnifyingGlass} style={{color : "#8D8D9A", width : "1.25rem", height : "1.25rem"}}/></div>
-            <input type="search" className='searchField' placeholder='Type here to search ...'/>
+            <input type="search" className='searchField px-1' placeholder='Type here to search ...'/>
           </div>
         </div>
         <div className="headerRight">
