@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBox, faHome, faListDots, faPlay, faStarOfLife } from '@fortawesome/free-solid-svg-icons'
+import './Sidebar.css'
 
 function Sidebar() {
   return <>

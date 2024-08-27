@@ -1,0 +1,33 @@
+.contentBody{
+    width: 100%;
+}
+
+.headerArea{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerCat{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchBar{
+    justify-content: flex-start;
+    align-items: center;
+    width: 40rem;
+    height: 2.25rem;
+    border: 1px solid #8D8D9A;
+    border-radius: 10px;
+}
+
+.searchIcon{
+     width: 7%;
+}
+
+.searchField{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}

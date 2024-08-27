@@ -22,3 +22,19 @@
     color: white;
     font-size: x-large;
 }
+
+.logoutPopUp{
+    background: #F4F4F4;
+    border: none;
+    border-radius: 10px;
+    width: 25rem;
+    height: 15rem;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 2;
+}
+
+.logoutBtns{
+    justify-content: space-around;
+}
