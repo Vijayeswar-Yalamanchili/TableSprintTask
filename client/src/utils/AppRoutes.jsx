@@ -1,10 +1,10 @@
 import { lazy, Suspense } from "react"
-import LoadingComponent from '../components/loadingComponent/LoadingComponent'
+import LoadingComponent from '../components/common/loadingComponent/LoadingComponent'
 
 const LoginPage = lazy(()=> import('../pages/AuthPages/Login'))
 const RegisterPage = lazy(()=> import('../pages/AuthPages/Register'))
 const ResetPasswordPage = lazy(()=> import('../pages/AuthPages/ResetPassword'))
-const HomePage = lazy(()=> import('../pages/Home/Home'))
+const DashboardPage = lazy(()=> import('../pages/dashboard/Dashboard'))
 
 const Approutes = [
     {
@@ -23,8 +23,8 @@ const Approutes = [
         exact : true
     },
     {
-        path : '/home',
-        element : <Suspense fallback={<LoadingComponent/>}><HomePage/></Suspense>,
+        path : '/dashboard',
+        element : <Suspense fallback={<LoadingComponent/>}><DashboardPage/></Suspense>,
         exact : true
     },
 ]

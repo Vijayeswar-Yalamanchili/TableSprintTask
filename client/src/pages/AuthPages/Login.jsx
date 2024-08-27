@@ -42,7 +42,7 @@ function Login() {
         let res = await AxiosService.post(`${ApiRoutes.LOGIN.path}`,values)
         if(res.status === 200){
             localStorage.setItem('loginToken',res.data.loginToken)
-            navigate('/home')
+            navigate('/dashboard')
             localStorage.removeItem('forgotPassToken')
         }
         setLoading(false)

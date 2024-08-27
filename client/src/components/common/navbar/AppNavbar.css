@@ -3,6 +3,8 @@
     background-color: #5C218B;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .navbarLeftArea{
