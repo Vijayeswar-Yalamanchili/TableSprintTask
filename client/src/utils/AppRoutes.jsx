@@ -5,6 +5,9 @@ const LoginPage = lazy(()=> import('../pages/AuthPages/Login'))
 const RegisterPage = lazy(()=> import('../pages/AuthPages/Register'))
 const ResetPasswordPage = lazy(()=> import('../pages/AuthPages/ResetPassword'))
 const DashboardPage = lazy(()=> import('../pages/dashboard/Dashboard'))
+const CategoryPage = lazy(()=> import('../pages/category/Category'))
+const SubCategoryPage = lazy(()=> import('../pages/subcategory/SubCategory'))
+const ProductsPage = lazy(()=> import('../pages/products/Products'))
 
 const Approutes = [
     {
@@ -25,6 +28,21 @@ const Approutes = [
     {
         path : '/dashboard',
         element : <Suspense fallback={<LoadingComponent/>}><DashboardPage/></Suspense>,
+        exact : true
+    },
+    {
+        path : '/category',
+        element : <Suspense fallback={<LoadingComponent/>}><CategoryPage/></Suspense>,
+        exact : true
+    },
+    {
+        path : '/subcategory',
+        element : <Suspense fallback={<LoadingComponent/>}><SubCategoryPage/></Suspense>,
+        exact : true
+    },
+    {
+        path : '/products',
+        element : <Suspense fallback={<LoadingComponent/>}><ProductsPage/></Suspense>,
         exact : true
     },
 ]
