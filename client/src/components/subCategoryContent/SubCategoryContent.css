@@ -1,5 +1,6 @@
 .contentBody{
     width: 100%;
+    margin-left: 13rem !important;
 }
 
 .headerArea{
@@ -22,7 +23,7 @@
 }
 
 .searchIcon{
-     width: 7%;
+    width: 7%;
 }
 
 .searchField{

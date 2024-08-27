@@ -9,6 +9,8 @@
     width: 12.5rem;
     text-align:left;
     padding-left: 0;
+    position: fixed;
+    top: 6.5rem;
 }
 
 .sidebar li{
@@ -23,10 +25,6 @@
 .sidebar li:hover {
     background-color: #F4EDAF;
 }
-
-/* .sidebar li:active{
-    background-color: red;
-} */
 
 p:hover {
     color: #5C218B;
