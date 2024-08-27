@@ -1,0 +1,22 @@
+.navbarArea{
+    height: 6.5rem;
+    background-color: #5C218B;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLeftArea{
+    justify-content: space-between;
+    align-items: center;
+    width: 12%;
+}
+
+.navImage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.navbarTitle{
+    color: white;
+    font-size: x-large;
+}
