@@ -1,7 +1,7 @@
 import React from 'react'
-import AppNavbar from '../../components/common/navbar/AppNavbar'
-import Sidebar from '../../components/common/sidebar/sidebar'
-import ProductsContent from '../../components/productsContent/ProductsContent'
+import AppNavbar from '../../../components/common/navbar/AppNavbar'
+import Sidebar from '../../../components/common/sidebar/sidebar'
+import ProductsContent from '../../../components/productsContent/ProductsContent'
 import './Products.css'
 
 function Products() {

@@ -4,10 +4,14 @@ import LoadingComponent from '../components/common/loadingComponent/LoadingCompo
 const LoginPage = lazy(()=> import('../pages/AuthPages/Login'))
 const RegisterPage = lazy(()=> import('../pages/AuthPages/Register'))
 const ResetPasswordPage = lazy(()=> import('../pages/AuthPages/ResetPassword'))
-const DashboardPage = lazy(()=> import('../pages/dashboard/Dashboard'))
-const CategoryPage = lazy(()=> import('../pages/category/Category'))
-const SubCategoryPage = lazy(()=> import('../pages/subcategory/SubCategory'))
-const ProductsPage = lazy(()=> import('../pages/products/Products'))
+const DashboardPage = lazy(()=> import('../pages/navs/dashboard/Dashboard'))
+const CategoryPage = lazy(()=> import('../pages/navs/category/Category'))
+const SubCategoryPage = lazy(()=> import('../pages/navs/subcategory/SubCategory'))
+const ProductsPage = lazy(()=> import('../pages/navs/products/Products'))
+const AddCategoryPage = lazy(()=> import('../pages/navs/addCategory/AddCategory'))
+const AddSubCategoryPage = lazy(()=> import('../pages/navs/addSubCategory/AddSubCategory'))
+const AddProductPage = lazy(()=> import('../pages/navs/addProduct/AddProduct'))
+
 
 const Approutes = [
     {
@@ -43,6 +47,21 @@ const Approutes = [
     {
         path : '/products',
         element : <Suspense fallback={<LoadingComponent/>}><ProductsPage/></Suspense>,
+        exact : true
+    },
+    {
+        path : '/addCategory',
+        element : <Suspense fallback={<LoadingComponent/>}><AddCategoryPage/></Suspense>,
+        exact : true
+    },
+    {
+        path : '/addSubCategory',
+        element : <Suspense fallback={<LoadingComponent/>}><AddSubCategoryPage/></Suspense>,
+        exact : true
+    },
+    {
+        path : '/addProduct',
+        element : <Suspense fallback={<LoadingComponent/>}><AddProductPage/></Suspense>,
         exact : true
     },
 ]

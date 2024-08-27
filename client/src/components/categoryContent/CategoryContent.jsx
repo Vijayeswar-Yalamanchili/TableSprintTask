@@ -3,8 +3,12 @@ import { Button } from 'react-bootstrap'
 import { faMagnifyingGlass, faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './CategoryContent.css'
+import { useNavigate } from 'react-router-dom'
 
 function CategoryContent() {
+
+  let navigate = useNavigate()
+
   return <>
     <div className='contentBody'>
       <div className='headerArea d-flex mx-5 my-4'>
@@ -15,11 +19,11 @@ function CategoryContent() {
           </div>
           <div className="searchBar d-flex ms-5">
             <div className='searchIcon ms-2'><FontAwesomeIcon icon={faMagnifyingGlass} style={{color : "#8D8D9A", width : "1.25rem", height : "1.25rem"}}/></div>
-            <input type="search" className='searchField px-1' placeholder='Type here to search ...'/>
+            <input type="search" className='searchField' placeholder='Type here to search ...'/>
           </div>
         </div>
         <div className="headerRight">
-          <Button >Add New</Button>
+          <Button style={{backgroundColor : "#5C218B", border : "none"}} onClick={() => navigate('/addCategory')}>Add New</Button>
         </div>
       </div>
     </div>

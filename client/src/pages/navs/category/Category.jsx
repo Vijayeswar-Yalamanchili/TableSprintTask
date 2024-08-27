@@ -1,7 +1,7 @@
 import React from 'react'
-import AppNavbar from '../../components/common/navbar/AppNavbar'
-import Sidebar from '../../components/common/sidebar/sidebar'
-import CategoryContent from '../../components/categoryContent/CategoryContent'
+import AppNavbar from '../../../components/common/navbar/AppNavbar'
+import Sidebar from '../../../components/common/sidebar/sidebar'
+import CategoryContent from '../../../components/categoryContent/CategoryContent'
 import './Category.css'
 
 function Category() {

@@ -3,8 +3,12 @@ import { Button } from 'react-bootstrap'
 import { faListDots, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './SubCategoryContent.css'
+import { useNavigate } from 'react-router-dom'
 
 function SubCategoryContent() {
+
+  let navigate = useNavigate()
+
   return <>
     <div className='contentBody'>
       <div className='headerArea d-flex mx-5 my-4'>
@@ -19,7 +23,7 @@ function SubCategoryContent() {
           </div>
         </div>
         <div className="headerRight">
-          <Button >Add New</Button>
+        <Button style={{backgroundColor : "#5C218B", border : "none"}} onClick={() => navigate('/addSubCategory')}>Add New</Button>
         </div>
       </div>
     </div>
